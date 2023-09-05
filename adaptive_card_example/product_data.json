@@ -1,0 +1,12 @@
+[
+  {
+    "title": "1:1 session- 30 mins",
+    "description":"30 mins 1:1 session to ask a quick question, get advice etc",
+    "price":"$50 per session"
+  },
+  {
+    "title": "Project Delivery",
+    "description":"Get a custom project delivered per your requirement",
+    "price":"$100 per hour"
+  }
+]
