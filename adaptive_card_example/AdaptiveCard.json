@@ -1,0 +1,35 @@
+{
+  type: "AdaptiveCard",
+    '$schema': "http://adaptivecards.io/schemas/adaptive-card.json",
+      version: "1.5",
+        body: [
+
+          {
+            type: "Container",
+            items:
+              ForAll(Topic.ProductData,
+                {
+                  type: "Container",
+                  items: [
+                    {
+                      text: Text(title),
+                      type: Text("TextBlock"),
+                      spacing: "large",
+                      size: "large"
+                    },
+                    {
+                      text: Text(description),
+                      type: Text("TextBlock"),
+                      isSubtle: true
+                    },
+                    {
+                      text: "Price",
+                      type: Text("TextBlock"),
+                    }
+                  ]
+                }
+
+              )
+          },
+        ]
+}
