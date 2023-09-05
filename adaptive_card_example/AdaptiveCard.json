@@ -13,18 +13,25 @@
                   items: [
                     {
                       text: Text(title),
-                      type: Text("TextBlock"),
+                      type: "TextBlock",
                       spacing: "large",
-                      size: "large"
+                      weight: "bolder",
+                      size: "medium"
                     },
                     {
                       text: Text(description),
-                      type: Text("TextBlock"),
+                      type: "TextBlock",
+                      wrap: true,
                       isSubtle: true
                     },
                     {
-                      text: "Price",
-                      type: Text("TextBlock"),
+                      text: "Price: " & Text(price),
+                      type: "TextBlock"
+                    },
+                    {
+                      text: "------------",
+                      type: "TextBlock",
+                      isSubtle: true
                     }
                   ]
                 }
